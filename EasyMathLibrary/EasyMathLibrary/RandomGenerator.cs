@@ -17,5 +17,7 @@ namespace EasyMathLibrary
         {
             return random.NextDouble() * (end - start) + start;
         }
+
+        public int Next(int start,)
     }
 }

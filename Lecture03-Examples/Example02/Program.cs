@@ -34,11 +34,13 @@ namespace Example02
             {
                 Console.WriteLine("data1 不等於 data2");
                 if (data1.Temperature != data2.Temperature)
+                {
                     Console.WriteLine("溫度發生變化");
-                else if (data1.Humidity != data2.Humidity) ;
-                Console.WriteLine("濕度發生變化");
-                if (data1.Pressure != data2.Pressure) ;
-                Console.WriteLine("壓力發生變化");
+                }
+                if (data1.Humidity != data2.Humidity)
+                    Console.WriteLine("濕度發生變化");
+                if (data1.Pressure != data2.Pressure)
+                    Console.WriteLine("壓力發生變化");
             }
         }
     }

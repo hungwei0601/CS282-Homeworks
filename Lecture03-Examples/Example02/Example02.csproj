@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{290F2153-6CC9-4814-815C-06CA9C56BFFA}</ProjectGuid>
+    <ProjectGuid>{E7255806-1481-4600-8D61-03E4F84B4D90}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Example02</RootNamespace>
     <AssemblyName>Example02</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -50,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\WeatherStationLibrary\WeatherStationLibrary\WeatherStationLibrary.csproj">
-      <Project>{7a4c1ad2-6233-4aee-9752-171b36756990}</Project>
+      <Project>{3867ec65-6e20-4177-be80-368676f253e7}</Project>
       <Name>WeatherStationLibrary</Name>
     </ProjectReference>
   </ItemGroup>

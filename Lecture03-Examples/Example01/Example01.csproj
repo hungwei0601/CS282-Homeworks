@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FF0A1B44-AB86-4862-AE29-19D47158D0D9}</ProjectGuid>
+    <ProjectGuid>{4B615765-C332-402D-856F-ABCB78283E20}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Example01</RootNamespace>
     <AssemblyName>Example01</AssemblyName>
@@ -50,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\EasyMathLibrary\EasyMathLibrary\EasyMathLibrary.csproj">
-      <Project>{e1a07af2-7941-493c-9d1c-27a67244460a}</Project>
+      <Project>{0b440026-7568-4812-b67d-7489beee5eeb}</Project>
       <Name>EasyMathLibrary</Name>
     </ProjectReference>
   </ItemGroup>

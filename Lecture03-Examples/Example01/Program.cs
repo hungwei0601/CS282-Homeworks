@@ -9,13 +9,11 @@ namespace Example01
 {
     internal class Program
     {
-        public static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            public static void Main(string[] args)
-            {
-                RandomGenerator random = new RandomGenerator();
-                Console.WriteLine(random.NextDouble() * (end - start) + start;
-            }
+            RandomGenerator random = new RandomGenerator();
+            Console.WriteLine(random.NextDouble(3.1, 5.5));
+            Console.WriteLine(random.NextDouble());
         }
     }
 }

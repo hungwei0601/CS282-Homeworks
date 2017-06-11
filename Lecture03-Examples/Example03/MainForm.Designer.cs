@@ -28,76 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.TemperatureLabel = new System.Windows.Forms.Label();
-            this.HumidityLabel = new System.Windows.Forms.Label();
-            this.PressureLabel = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.weatherDataPanel = new System.Windows.Forms.Panel();
+            this.pressureLabel = new System.Windows.Forms.Label();
+            this.humidityLabel = new System.Windows.Forms.Label();
+            this.temperatureLabel = new System.Windows.Forms.Label();
+            this.weatherDataPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // weatherDataPanel
             // 
-            this.panel1.Controls.Add(this.PressureLabel);
-            this.panel1.Controls.Add(this.HumidityLabel);
-            this.panel1.Controls.Add(this.TemperatureLabel);
-            this.panel1.Location = new System.Drawing.Point(40, 46);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(529, 271);
-            this.panel1.TabIndex = 0;
+            this.weatherDataPanel.Controls.Add(this.pressureLabel);
+            this.weatherDataPanel.Controls.Add(this.humidityLabel);
+            this.weatherDataPanel.Controls.Add(this.temperatureLabel);
+            this.weatherDataPanel.Font = new System.Drawing.Font("微軟正黑體", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.weatherDataPanel.Location = new System.Drawing.Point(27, 32);
+            this.weatherDataPanel.Name = "weatherDataPanel";
+            this.weatherDataPanel.Size = new System.Drawing.Size(280, 268);
+            this.weatherDataPanel.TabIndex = 0;
             // 
-            // TemperatureLabel
+            // pressureLabel
             // 
-            this.TemperatureLabel.AutoSize = true;
-            this.TemperatureLabel.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.TemperatureLabel.Location = new System.Drawing.Point(49, 52);
-            this.TemperatureLabel.Name = "TemperatureLabel";
-            this.TemperatureLabel.Size = new System.Drawing.Size(56, 21);
-            this.TemperatureLabel.TabIndex = 0;
-            this.TemperatureLabel.Text = "溫度:0";
-            this.TemperatureLabel.Click += new System.EventHandler(this.temperalabel1_Click);
+            this.pressureLabel.AutoSize = true;
+            this.pressureLabel.Location = new System.Drawing.Point(43, 156);
+            this.pressureLabel.Name = "pressureLabel";
+            this.pressureLabel.Size = new System.Drawing.Size(87, 30);
+            this.pressureLabel.TabIndex = 2;
+            this.pressureLabel.Text = "壓力: 0";
             // 
-            // HumidityLabel
+            // humidityLabel
             // 
-            this.HumidityLabel.AutoSize = true;
-            this.HumidityLabel.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.HumidityLabel.Location = new System.Drawing.Point(49, 107);
-            this.HumidityLabel.Name = "HumidityLabel";
-            this.HumidityLabel.Size = new System.Drawing.Size(56, 21);
-            this.HumidityLabel.TabIndex = 1;
-            this.HumidityLabel.Text = "濕度:0";
+            this.humidityLabel.AutoSize = true;
+            this.humidityLabel.Location = new System.Drawing.Point(43, 108);
+            this.humidityLabel.Name = "humidityLabel";
+            this.humidityLabel.Size = new System.Drawing.Size(87, 30);
+            this.humidityLabel.TabIndex = 1;
+            this.humidityLabel.Text = "濕度: 0";
             // 
-            // PressureLabel
+            // temperatureLabel
             // 
-            this.PressureLabel.AutoSize = true;
-            this.PressureLabel.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.PressureLabel.Location = new System.Drawing.Point(49, 167);
-            this.PressureLabel.Name = "PressureLabel";
-            this.PressureLabel.Size = new System.Drawing.Size(56, 21);
-            this.PressureLabel.TabIndex = 2;
-            this.PressureLabel.Text = "壓力:0";
-            this.PressureLabel.Click += new System.EventHandler(this.label3_Click);
+            this.temperatureLabel.AutoSize = true;
+            this.temperatureLabel.Location = new System.Drawing.Point(43, 58);
+            this.temperatureLabel.Name = "temperatureLabel";
+            this.temperatureLabel.Size = new System.Drawing.Size(87, 30);
+            this.temperatureLabel.TabIndex = 0;
+            this.temperatureLabel.Text = "溫度: 0";
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(631, 520);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(344, 346);
+            this.Controls.Add(this.weatherDataPanel);
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "不準確觀測站";
             this.Load += new System.EventHandler(this.MainForm_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.weatherDataPanel.ResumeLayout(false);
+            this.weatherDataPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label PressureLabel;
-        private System.Windows.Forms.Label HumidityLabel;
-        private System.Windows.Forms.Label TemperatureLabel;
+        private System.Windows.Forms.Panel weatherDataPanel;
+        private System.Windows.Forms.Label pressureLabel;
+        private System.Windows.Forms.Label humidityLabel;
+        private System.Windows.Forms.Label temperatureLabel;
     }
 }
 

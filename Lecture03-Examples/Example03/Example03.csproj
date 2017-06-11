@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E5AADCD9-7FA6-4CD8-B475-B239C2E045AB}</ProjectGuid>
+    <ProjectGuid>{8C2EC8EA-DD57-4BC6-ADFB-63B2AA3E1D8F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Example03</RootNamespace>
     <AssemblyName>Example03</AssemblyName>
@@ -80,7 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\WeatherStationLibrary\WeatherStationLibrary\WeatherStationLibrary.csproj">
-      <Project>{7a4c1ad2-6233-4aee-9752-171b36756990}</Project>
+      <Project>{3867ec65-6e20-4177-be80-368676f253e7}</Project>
       <Name>WeatherStationLibrary</Name>
     </ProjectReference>
   </ItemGroup>
